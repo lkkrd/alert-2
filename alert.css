@@ -1,0 +1,57 @@
+:root {
+  --alert-color: rgb(194, 117, 201);
+  --btn-size: 30px;
+}
+.alert-positioner {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  bottom: 0px;
+  backdrop-filter: blur(5px);
+}
+.alert {
+  position: absolute;
+  width: fit-content;
+  margin: auto;
+  bottom: 20px;
+  border: 3px solid var(--alert-color);
+  border-radius: 20px;
+}
+.alert-title {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: var(--alert-color);
+}
+.container-inner {
+  display: flex;
+}
+.btns {
+  padding: 10px;
+}
+.btn {
+  width: var(--btn-size);
+  height: var(--btn-size);
+  display: block;
+  border-color: var(--alert-color);
+  border-radius: 10px;
+  margin: 3px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--alert-color);
+}
+.alert-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 800px;
+  padding: 10px;
+  padding-top: 15px;
+  color: var(--alert-color);
+}
